@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-    echo "Invalid number of arguments."
-    echo "Usage: gitC.sh [--C|--F|--R|--D] message"
+    echo "Invalid arguments."
+    echo "Usage: gitC.sh [--C|--F|--R|--D|--W] message"
     exit 1
 fi
 
