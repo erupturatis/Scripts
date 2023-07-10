@@ -11,9 +11,10 @@ case "$1" in
     --F) MESSAGE="(fix)[$(date)] $2" ;;
     --R) MESSAGE="(refactor)[$(date)] $2" ;;
     --D) MESSAGE="(delete)[$(date)] $2" ;;
+    --W) MESSAGE="(working)[$(date)] $2" ;;
     *)
         echo "Invalid option: $1"
-        echo "Usage: gitC.sh [--C|--F|--R|--D] message"
+        echo "Usage: gitC.sh [--C|--F|--R|--D|--W] message"
         exit 1
         ;;
 esac
